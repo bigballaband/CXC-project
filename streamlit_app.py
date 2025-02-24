@@ -4,16 +4,22 @@ from streamlit.components.v1 import html
 
 # Define the Markov chain predictions as a DataFrame
 markov_predictions = pd.read_csv("predictions.csv")
+sampleData = pd.read_csv("sampleData.csv")
+
 
 # Streamlit app title
-st.title("Workflow Dashboard")
+st.title("CxC Project Dashboard, Federato")
 
 # Display the Markov chain predictions
-st.header("Markov Chain Predictions")
+st.header("Markov Chain Model Predictions:")
+st.text("Given the current event, the event most likely to happen is next event. This was implemented using a markov chain training model.")
 st.dataframe(markov_predictions)
 
+st.subheader("Our model prediction accuracy is 54%.")
+
 # Load and display the workflow diagrams
-st.header("Workflow Diagrams")
+st.header("Workflow Diagrams:")
+st.text("These are the five most common event types within the 2025 dataset.")
 
 # Function to load and display HTML files
 def display_html(file_path):
