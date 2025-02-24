@@ -43,6 +43,3 @@ display_html("dashboard_my-book_layout_render_event_transitions.html")
 st.subheader("Session End Event Transitions")
 display_html("session_end_event_transitions.html")
 
-# Run the Streamlit app
-if __name__ == "__main__":
-    st.write("Interactive Dashboard is running...")
