@@ -4,7 +4,6 @@ from streamlit.components.v1 import html
 
 # Define the Markov chain predictions as a DataFrame
 markov_predictions = pd.read_csv("predictions.csv")
-sampleData = pd.read_csv("sampleData.csv")
 
 
 # Streamlit app title
