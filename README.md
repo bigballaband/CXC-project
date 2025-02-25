@@ -1,19 +1,17 @@
-# 🎈 Blank app template
+# CxC Federato dashboard
 
-A simple Streamlit app template for you to modify!
+Inspiration 📊
+Every user action tells a story. On platforms like Federato RiskOps, underwriters rely on digital tools to assess risks and make decisions. But what if we could predict what they’ll do next? By understanding user behavior, we can optimize workflows, reduce drop-offs, and improve engagement.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+That’s where FlowCast comes in. We built a Markov Chain model to analyze user interactions and uncover patterns in engagement. Our interactive dashboard helps visualize these insights, giving Federato the tools to enhance user retention and navigation.
 
-### How to run it on your own machine
+What It Does 🔍
+FlowCast analyzes user behavior and predicts the next most likely action based on historical interactions. Our model achieves 54% accuracy, demonstrating that user actions follow predictable patterns. By mapping these behaviors, we can:
+✅ Identify common user journeys
+✅ Predict next actions in real time
+✅ Highlight areas where users drop off
 
-1. Install the requirements
+With these insights, Federato can improve platform usability and keep users engaged for longer.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+How We Built It 🚀
+We processed user event data from Amplitude (2024-2025), built a Markov Chain transition model, and developed an interactive Streamlit dashboard to explore trends.
